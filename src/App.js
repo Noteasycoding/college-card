@@ -14,24 +14,27 @@ const App = () => {
       collegeLogo: "https://images.collegedunia.com/public/college_data/images/logos/col27821.png?h=80&w=80&mode=stretch",
       collegeDuniyaRating: 7.5,
       userReviewRating: 8.3,
+      address: " Kurukshetra, Haryana",
       fees: 56716,
     },
     {
       id: 2,
-      collegeName: "NATIONAL INSTITUTE OF TECHNOLOGY -[NIT], WARANGAL",
-      imgUrl: "https://images.collegedunia.com/public/college_data/images/campusimage/1435406111DSC_6913.JPG",
-      collegeLogo: "https://images.collegedunia.com/public/college_data/images/logos/col27821.png?h=80&w=80&mode=stretch",
+      collegeName: "National Institute Of Technology - [NIT], New Delhi",
+      imgUrl: "https://images.collegedunia.com/public/college_data/images/campusimage/14410828821f.jpg",
+      collegeLogo: "https://images.collegedunia.com/public/college_data/images/logos/1509002389logo.png?h=80&w=80&mode=stretch",
       collegeDuniyaRating: 8.0,
       userReviewRating: 9.1,
+      address: "New Delhi, Delhi NCR",
       fees: 65432,
     },
     {
       id: 3,
-      collegeName: "INDIAN INSTITUTE OF TECHNOLOGY (IIT), BOMBAY",
-      imgUrl: "https://images.collegedunia.com/public/college_data/images/campusimage/1435406111DSC_6913.JPG",
-      collegeLogo: "https://images.collegedunia.com/public/college_data/images/logos/col27821.png?h=80&w=80&mode=stretch",
+      collegeName: "National Institute Of Technology - [NIT], Srinagar",
+      imgUrl: "https://images.collegedunia.com/public/college_data/images/campusimage/1412671813nit4.JPG",
+      collegeLogo: "https://images.collegedunia.com/public/college_data/images/logos/1410851535nit%20logo.jpg?h=80&w=80&mode=stretch",
       collegeDuniyaRating: 9.2,
       userReviewRating: 8.8,
+      address: "Srinagar, Jammu And Kashmir",
       fees: 98765,
     },
   ]
@@ -89,9 +92,12 @@ const App = () => {
           key={item.id}
           collegeName={item.collegeName}
           imgUrl={item.imgUrl}
+          collegeLogo={item.collegeLogo}
           collegeDuniyaRating={item.collegeDuniyaRating}
           userReviewRating={item.userReviewRating}
+          address={item.address}
           fees={item.fees}
+
         />
       ))}
     </div>

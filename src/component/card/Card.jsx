@@ -12,11 +12,6 @@ const Card = (props) => {
                         <p>2</p>
                     </div>
                     <div className="right">
-
-                        <div className="ratingIcon">
-
-                            <p>image</p>
-                        </div>
                         <div className="rating">
                             <p>COLLEGEDUNIA RATING</p>
                             <p>{props.collegeDuniyaRating}/10</p>
@@ -27,13 +22,13 @@ const Card = (props) => {
                 <div className="collegeName">
                     <div className="image">
 
-                        <img src="https://images.collegedunia.com/public/college_data/images/logos/col27821.png?h=80&w=80&mode=stretch" alt="" />
+                        <img src={props.collegeLogo} alt="" />
                     </div>
                     <div className="details">
                         <p>{props.collegeName}</p>
                         <div className="address">
 
-                            <p>KURUKSHETRA, HARYANA</p>
+                            <p>{props.address}</p>
                             <p>ACTIVE</p>
                         </div>
                     </div>
