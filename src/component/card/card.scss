@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+
+
+    img {
+        height: 500px;
+        width: 100%;
+    }
+
+    .imgView {
+
+        position: relative;
+
+        .data {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .left,
+            .right {
+                padding: 0 30px;
+                display: flex;
+                gap: 20px;
+
+                p {
+                    color: white;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+
+            .right {
+                align-items: center;
+                /* Removed duplicated property align-items: flex-end; */
+
+                .rating {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+            }
+        }
+
+        .collegeName {
+            position: absolute;
+            left: 40px;
+            top: 457px;
+
+            /* Added 'px' to the top value */
+            .image {
+
+                box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.75);
+
+                img {
+                    height: 80px;
+                    width: 90px;
+                }
+            }
+
+            display: flex;
+            gap: 10px;
+
+            .details {
+                p {
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: white;
+                }
+
+                .address {
+                    margin-top: 10px;
+                    display: flex;
+                    gap: 10px;
+
+
+                    p {
+                        font-size: medium;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec2 {
+        margin-left: 40px;
+        margin-top: 70px;
+        display: flex;
+        gap: 40px;
+
+        .fees {
+            .colored {
+                p {
+                    color: orange;
+                    font-size: large;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .bar {
+            height: 50px;
+            width: 4px;
+            background: lightgray;
+        }
+
+        .rating {
+            .colored {
+                p {
+                    color: orange;
+                    font-size: large;
+                    font-weight: 800;
+                }
+            }
+        }
+
+    }
+
+    .line {
+        margin: 20px 0;
+        height: 3px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .sec3 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
+
+        .NIRF {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .bcc {
+                p {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .week {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .bcc {
+                p {
+                    font-weight: 500;
+                }
+            }
+
+
+        }
+    }
+
+    .sec4 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
+        margin-top: 10px;
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    .btn {
+        margin-top: 10px;
+        border: 1px solid lightgray;
+        display: flex;
+
+        .apply {
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            background-color: orange;
+
+            p {
+                color: white;
+                font-weight: 700;
+            }
+        }
+
+        .brochure {
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+
+            p {
+                color: orange;
+                font-weight: 700;
+            }
+        }
+    }
+}
